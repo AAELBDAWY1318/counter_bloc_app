@@ -8,15 +8,13 @@ class CounterCubit extends Cubit<CounterState> {
 
   int counter = 0;
 
-  void increament(int x){
-    x++;
-    counter = x;
+  void increament(){
+    counter++;
     emit(IncreamentCounterState());
   }
 
-  void decreament(int x){
-    x--;
-    counter = x;
+  void decreament(){
+    counter--;
     emit(DecreamentCounterState());
   }
 }
